@@ -16,7 +16,7 @@ def test_updating_value():
     # Arrange
     account = accounts[0]
     simple_storage = SimpleStorage.deploy({"from": account})
-    expected_value = 15
+    expected_value = 1001
     tx = simple_storage.store(expected_value, {"from": account})
     tx.wait(1)
     # Act
